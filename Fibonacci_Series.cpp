@@ -1,20 +1,22 @@
-//Program for Fibonacci Series.
-#include<iostream>
+//Program for Fibonacci Series using For-loop.
+#include <iostream>
 using namespace std;
 int main()
 {
-	unsigned long long int a,res,res1,res2;
-	a=50;
-	res1=0;
-	res2=1;
-	cout<<res1<<" "<<res2<<" ";
-	for(int i=1;i<a;i++)
+	double n, n1, n2, n3;
+	cout << "Enter the number of elements: ";
+	cin >> n;
+	//setting first two terms fibo series to 0,1.
+	n1 = 0;
+	n2 = 1;
+	cout << n1 << " " << n2 << " ";
+	//evaluating subsequent terms using FOR loop.
+	for (int i = 1; i < n; i++)
 	{
-		res=res1+res2;
-		res1=res2;
-		res2=res;
-		cout<<res<<" ";
-			
+		n3 = n1 + n2;
+		n1 = n2;
+		n2 = n3;
+		cout << n3 << " ";
 	}
-	return 0;	
+	return 0;
 }
