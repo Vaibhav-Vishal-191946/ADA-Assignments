@@ -11,7 +11,7 @@ int main()
 	n2 = 1;
 	cout << n1 << " " << n2 << " ";
 	//evaluating subsequent terms using FOR loop.
-	for (int i = 1; i < n; i++)
+	for (int i = 1; i < n - 1; i++)
 	{
 		n3 = n1 + n2;
 		n1 = n2;
